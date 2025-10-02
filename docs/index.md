@@ -24,28 +24,27 @@ This is a modern Cookiecutter template that can be used to initiate a Python pro
 - Containerization with [Docker](https://www.docker.com/) or [Podman](https://podman.io/)
 - Development environment with [VSCode devcontainers](https://code.visualstudio.com/docs/devcontainers/containers)
 
-An example of a repository generated with this package can be found [here](https://github.com/fpgmaas/cookiecutter-uv-example).
-
 ## Quickstart
 
 On your local machine, navigate to the directory in which you want to
 create a project directory, and run the following command:
 
 ```bash
-uvx cookiecutter https://github.com/fpgmaas/cookiecutter-uv.git
+uvx cookiecutter https://github.com/florean/python-template.git
 ```
 
 or if you don't have `uv` installed yet:
 
 ```bash
 pip install cookiecutter
-cookiecutter https://github.com/fpgmaas/cookiecutter-uv.git
+cookiecutter https://github.com/florean/python-template.git
 ```
 
 Follow the prompts to configure your project. Once completed, a new directory containing your project will be created. Then navigate into your newly created project directory and follow the instructions in the `README.md` to complete the setup of your project.
 
 ### Acknowledgements
 
-This project is partially based on [Audrey
-Feldroy's](https://github.com/audreyfeldroy) great
-[cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage).
+This project is forked from [Florian Maas's](https://github.com/fpgmaas/) cookiecutter [repo](https://github.com/fpgmaas/cookiecutter-uv), which is partially based on [Audrey
+Feldroy\'s](https://github.com/audreyfeldroy)\'s great
+[cookiecutter-pypackage](https://github.com/audreyfeldroy/cookiecutter-pypackage)
+repository.
