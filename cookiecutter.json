@@ -38,14 +38,14 @@
     "n"
   ],
   "type_checker": [
-    "mypy",
-    "ty"
+    "ty",
+    "mypy"
   ],
   "open_source_license": [
+    "Apache Software License 2.0",
     "MIT license",
     "BSD license",
     "ISC license",
-    "Apache Software License 2.0",
     "GNU General Public License v3",
     "Not open source"
   ]
