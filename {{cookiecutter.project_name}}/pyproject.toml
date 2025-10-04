@@ -73,6 +73,11 @@ show_error_codes = true
 [tool.ty.environment]
 python = "./.venv"
 python-version = "3.9"
+
+[tool.ty.src]
+exclude = [
+    "tests/**",
+]
 {%- endif %}
 
 [tool.pytest.ini_options]
@@ -80,7 +85,7 @@ testpaths = ["tests"]
 
 [tool.ruff]
 target-version = "py39"
-line-length = 120
+line-length = 100
 fix = true
 
 [tool.ruff.lint]
@@ -121,6 +126,8 @@ ignore = [
     "E501",
     # DoNotAssignLambda
     "E731",
+    # RaiseVanillaArgs
+    "TRY003",
 ]
 
 [tool.ruff.lint.per-file-ignores]
@@ -128,6 +135,7 @@ ignore = [
 
 [tool.ruff.format]
 preview = true
+docstring-code-format = true
 
 {% if cookiecutter.codecov == "y" -%}
 [tool.coverage.report]
@@ -143,3 +151,8 @@ source = [
     {%- endif -%}
 ]
 {% endif %}
+
+[tool.black]
+line-length = 100
+preview = true
+enable-unstable-feature = ["string_processing"]
